@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
+}
+
+#navbar {
+  height: 35vh;
+  display: flex;
+  position: relative;
+}
+
+#cookie {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+#logo {
+  position: absolute;
+  right: 1%;
+  top: 2%;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  top: 25%;
+  left: 50%;
+  font-family: "Inter", sans-serif;
+}
+
+.overlay>h1 {
+  color: rgba(202, 37, 49, 1);
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: auto;
+}
+
+.overlay>p {
+  font-weight: 600;
+  line-height: 26.97px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.homeMain {
+  display: flex;
+  padding: 3%;
+  gap: 2%;
+}
+
+.left {
+  width: 20%;
+  padding: 2%;
+  background-color: #FFD098;
+  border-radius: 20px;
+  position: relative;
+}
+
+.left>h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin: auto;
+}
+
+.left>p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.box {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: left;
+  margin: 2% 0%;
+}
+
+.box>p:nth-child(1) {
+  background-color: #FFEEDA;
+  padding: 2%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.box>p:nth-child(2) {
+  font-size: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.right {
+  width: 70%;
+  padding: 0% 1%;
+}
+
+.right>h1 {
+  font-weight: 600;
+  font-size: 34px;
+  color: rgba(144, 33, 44, 1);
+  margin: auto;
+}
+
+.wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e e"
+    "f g"
+    "h i"
+  ;
+  margin: auto;
+  gap: 8% 15%;
+}
+
+.field {
+  width: 100%;
+  margin: auto;
+}
+
+.field>input,
+.field>select {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(229, 229, 229, 0.4);
+  border: 1px solid rgba(18, 18, 18, 0.16);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2.5% 1%;
+}
+
+.span {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(218, 53, 69, 1);
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+}
+
+.span>p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.field:nth-child(1) {
+  grid-area: a;
+}
+
+.field:nth-child(2) {
+  grid-area: b;
+}
+
+.field:nth-child(3) {
+  grid-area: c;
+}
+
+.field:nth-child(4) {
+  grid-area: d;
+}
+
+.field:nth-child(5) {
+  grid-area: e;
+}
+
+.field:nth-child(6) {
+  grid-area: f;
+}
+
+.field:nth-child(7) {
+  grid-area: g;
+}
+
+.field:nth-child(8) {
+  grid-area: h;
+}
+
+.field:nth-child(9) {
+  grid-area: i;
+}
+
+.combine {
+  position: relative;
+}
+
+.combine>input {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(229, 229, 229, 0.4);
+  border: 1px solid rgba(18, 18, 18, 0.16);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2.5% 1%;
+}
+
+.combine>button {
+  position: absolute;
+  top: 10%;
+  padding: 2%;
+  right: -1%;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(218, 53, 69, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.combine>p {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+}
+
+.fileInput {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 3%;
+  border-radius: 8px;
+  border: 1px solid rgba(18, 18, 18, 0.16);
+  background-color: rgba(229, 229, 229, 0.4);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.fileInput>img {
+  width: 50%;
+  height: 50%;
+}
+
+.fileInput>input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer !important;
+}
+
+.nextButton button {
+  background-color: rgba(220, 53, 69, 1);
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 3% 10%;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.right>h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.2px;
+  background-color: rgba(144, 33, 44, 1);
+  padding: 1%;
+  width: 190px;
+  text-align: center;
+  margin: 3% 0%;
+  color: white;
+  border-radius: 20px;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: start;
+  gap: 8% 15%;
+  grid-template-areas:
+    "a b"
+    "c b"
+    "d e"
+    "f f"
+    "g h"
+  ;
+}
+
+.field2:nth-child(1) {
+  grid-area: a;
+}
+
+.field2:nth-child(2) {
+  grid-area: b;
+}
+
+.field2:nth-child(3) {
+  grid-area: c;
+}
+
+.field2:nth-child(4) {
+  grid-area: d;
+}
+
+.field2:nth-child(5) {
+  grid-area: e;
+}
+
+.field2:nth-child(6) {
+  grid-area: f;
+}
+
+.field2:nth-child(7) {
+  grid-area: g;
+}
+
+.field2:nth-child(8) {
+  grid-area: h;
+}
+
+
+.field2 {
+  width: 100%;
+  margin: auto;
+}
+
+.field2>input,
+.field2>select {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(229, 229, 229, 0.4);
+  border: 1px solid rgba(18, 18, 18, 0.16);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2% 1.5%;
+}
+
+.checks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(218, 53, 69, 1);
+  gap: 1%;
+}
+
+.checks input {
+  display: none;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(218, 53, 69, 1);
+  cursor: pointer;
+}
+
+.custom-checkbox:checked {
+  border-color: white;
+}
+
+.manager {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.manager>button {
+  padding: 3% 6%;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 3% 3%;
+  font-size: 14px;
+  color: rgba(220, 53, 69, 1);
+  border: 1px solid rgba(220, 53, 69, 1);
+  background-color: white;
+}
+
+.manager>button:hover {
+  background-color: rgba(220, 53, 69, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.otpField {
+  background-color: rgba(220, 53, 69, 1) !important;
+  margin: 2% 0%;
+  letter-spacing: 2rem;
+  text-align: center;
+  color: white;
+}
